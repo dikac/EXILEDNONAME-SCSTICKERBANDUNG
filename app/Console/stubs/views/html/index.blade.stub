@@ -1,0 +1,10 @@
+@extends('layouts.datatable.__index', ['page' => 'index'])
+@push('title', '%%crudNameCap%%')
+
+@push('table-header')
+%%formHeadingHtml%%
+@endpush
+
+@push('table-body')
+%%formBodyHtml%%
+@endpush
