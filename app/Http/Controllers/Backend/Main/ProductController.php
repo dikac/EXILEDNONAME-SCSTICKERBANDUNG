@@ -85,7 +85,7 @@ class ProductController extends Controller {
 
   public function store(StoreRequest $request) {
     $photo = time().'_'. $request->file('photo')->getClientOriginalName();
-    $destination = base_path() . '/public/photo/product/test';
+    $destination = base_path() . '/public/files/photo/product';
     $request->file('photo')->move($destination, $photo);
 
     $store = $request->all();
