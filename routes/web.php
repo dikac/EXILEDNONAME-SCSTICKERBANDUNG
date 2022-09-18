@@ -6,10 +6,10 @@ Route::get('/help', function () { return view('pages.frontend.main.help'); });
 
 Auth::routes();
 
-include( base_path(). '/routes/backend/system/dashboard.php');
-// include('backend\system\dummy.php');
-// include('backend\system\management.php');
-// include('backend\system\help.php');
+include(base_path(). '/routes/backend/system/dashboard.php');
+include(base_path(). '/routes/backend/system/dummy.php');
+include(base_path(). '/routes/backend/system/management.php');
+include(base_path(). '/routes/backend/system/help.php');
 
 Auth::routes();
 

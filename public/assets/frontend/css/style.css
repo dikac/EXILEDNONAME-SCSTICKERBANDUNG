@@ -4,7 +4,7 @@ Theme URI: http://www.ansonika.com/foogra/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 0. ICONS
 
@@ -27,7 +27,7 @@ Author URI: http://themeforest.net/user/Ansonika/
 - 3.5 Magnific Popup CSS
 - 3.6 Sing In Modal
 - 3.7 Misc
-- 3.8 Cookie bar 
+- 3.8 Cookie bar
 
 
 /*============================================================================================*/
@@ -3405,7 +3405,7 @@ ul#top_menu li a.login:before {
 a.btn_1,
 .btn_1 {
   border: none;
-  background: #589442;
+  background: #FFBF00;
   outline: none;
   cursor: pointer;
   display: inline-block;
