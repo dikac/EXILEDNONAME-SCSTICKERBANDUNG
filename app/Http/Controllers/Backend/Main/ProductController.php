@@ -116,13 +116,19 @@ class ProductController extends Controller {
   **/
 
   public function update(UpdateRequest $request, $id) {
-    $photo = time().'_'. $request->file('photo')->getClientOriginalName();
-    $destination = base_path() . '/public/files/photo/product';
-    $request->file('photo')->move($destination, $photo);
+    if (!empty($request->file('photo'))) {
+      $photo = time().'_'. $request->file('photo')->getClientOriginalName();
+      $destination = base_path() . '/public/files/photo/product';
+      $request->file('photo')->move($destination, $photo);
+    }
 
     $data = $this->model::findOrFail($id);
     $update = $request->all();
-    $update['photo'] = $photo;
+
+    if (!empty($request->file('photo'))) {
+      $update['photo'] = $photo;
+    }
+    
     $data->update($update);
     return redirect($this->url)->with('success', trans('default.notification.success.item-updated'));
   }

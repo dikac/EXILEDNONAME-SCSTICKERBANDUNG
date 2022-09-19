@@ -127,9 +127,9 @@ class BannerController extends Controller {
     $update = $request->all();
 
     if (!empty($request->file('photo'))) {
-    $update['photo'] = $photo;
-  }
-  
+      $update['photo'] = $photo;
+    }
+
     $data->update($update);
     return redirect($this->url)->with('success', trans('default.notification.success.item-updated'));
   }
