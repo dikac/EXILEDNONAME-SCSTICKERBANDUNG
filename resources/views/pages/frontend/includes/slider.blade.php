@@ -9,7 +9,7 @@
             <div class="col-lg-6 static">
               <div class="slide-text text-center white">
                 <h2 class="owl-slide-animated owl-slide-title"> {{ $slider->name }} </h2>
-                <p class="owl-slide-animated owl-slide-subtitle"> {{ $slider->description }} TESDAS ASDSA </p>
+                <p class="owl-slide-animated owl-slide-subtitle"> {{ $slider->description }} </p>
               </div>
             </div>
           </div>
