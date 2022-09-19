@@ -14,6 +14,6 @@ class DatabaseSeeder extends Seeder
         $this->call(Settings::class);
         $this->call(Accesses::class);
         $this->call(Users::class);
-        $this->call(TableGenerals::class);
+        // $this->call(TableGenerals::class);
     }
 }

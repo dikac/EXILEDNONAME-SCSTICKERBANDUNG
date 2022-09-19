@@ -10,10 +10,10 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Spatie\Activitylog\Models\Activity;
 
-use App\Http\Requests\Backend\Main\Product\StoreRequest;
-use App\Http\Requests\Backend\Main\Product\UpdateRequest;
+use App\Http\Requests\Backend\Main\Slider\StoreRequest;
+use App\Http\Requests\Backend\Main\Slider\UpdateRequest;
 
-class ProductController extends Controller {
+class SliderController extends Controller {
 
   /**
   **************************************************
@@ -25,9 +25,9 @@ class ProductController extends Controller {
   public function __construct() {
 
     $this->middleware('auth');
-    $this->url = '/dashboard/products';
-    $this->path = 'pages.backend.main.product.';
-    $this->model = 'App\Models\Backend\Main\Product';
+    $this->url = '/dashboard/sliders';
+    $this->path = 'pages.backend.main.slider.';
+    $this->model = 'App\Models\Backend\Main\Slider';
 
     if (request('date_start') && request('date_end')) { $this->data = $this->model::orderby('date_start', 'desc')->whereBetween('date_start', [request('date_start'), request('date_end')])->get(); }
     else { $this->data = $this->model::get(); }
@@ -85,7 +85,7 @@ class ProductController extends Controller {
 
   public function store(StoreRequest $request) {
     $photo = time().'_'. $request->file('photo')->getClientOriginalName();
-    $destination = base_path() . '/public/files/photo/product';
+    $destination = base_path() . '/public/files/photo/slider';
     $request->file('photo')->move($destination, $photo);
 
     $store = $request->all();
@@ -117,9 +117,8 @@ class ProductController extends Controller {
 
   public function update(UpdateRequest $request, $id) {
     $photo = time().'_'. $request->file('photo')->getClientOriginalName();
-    $destination = base_path() . '/public/files/photo/product';
+    $destination = base_path() . '/public/files/photo/slider';
     $request->file('photo')->move($destination, $photo);
-
     $data = $this->model::findOrFail($id);
     $update = $request->all();
     $update['photo'] = $photo;

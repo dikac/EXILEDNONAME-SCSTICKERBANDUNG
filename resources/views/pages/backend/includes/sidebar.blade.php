@@ -18,25 +18,6 @@
 
         @include('pages.backend.includes.sidebar-item')
 
-        <li class="menu-section">
-          <h4 class="menu-text"> DUMMIES </h4>
-          <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
-        </li>
-        <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/tables*')) ? 'menu-item-open' : '' }}">
-          <a href="javascript:;" class="menu-link menu-toggle">
-            <i class="menu-icon fas fa-list-ul"></i>
-            <span class="menu-text"> Tables </span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="menu-submenu">
-            <i class="menu-arrow"></i>
-            <ul class="menu-subnav">
-              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/tables/generals*')) ? 'menu-item-active' : '' }}"><a href="/dashboard/tables/generals" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-line"><span></span></i> Generals </span></a></li>
-              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/tables/relations*')) ? 'menu-item-active' : '' }}"><a href="/dashboard/tables/relations" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-line"><span></span></i> Relations </span></a></li>
-            </ul>
-          </div>
-        </li>
-
         <!-- EXTENSIONS -->
         <li class="menu-section">
           <h4 class="menu-text"> EXTENSIONS </h4>

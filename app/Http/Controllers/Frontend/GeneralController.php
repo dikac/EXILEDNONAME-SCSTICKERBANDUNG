@@ -13,7 +13,10 @@ use Spatie\Activitylog\Models\Activity;
 use App\Http\Requests\Backend\Main\Section1\StoreRequest;
 use App\Http\Requests\Backend\Main\Section1\UpdateRequest;
 
+use App\Setting;
+use App\Models\Backend\Main\Banner;
 use App\Models\Backend\Main\Product;
+use App\Models\Backend\Main\Slider;
 
 class GeneralController extends Controller {
 
@@ -35,8 +38,11 @@ class GeneralController extends Controller {
   **/
 
   public function index() {
-    $product = Product::get();
-    return view($this->path . 'index', compact('product'));
+    $setting = Setting::first();
+    $banner = Banner::where('active', 1)->get();
+    $product = Product::where('active', 1)->get();
+    $slider = Slider::where('active', 1)->get();
+    return view($this->path . 'index', compact('setting', 'banner', 'product', 'slider'));
   }
 
 }

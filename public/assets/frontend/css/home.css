@@ -532,7 +532,7 @@ video {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 350px;
+  height: 250px;
   margin-bottom: 60px;
   position: relative;
 }
