@@ -1,8 +1,14 @@
-<script src="/assets/frontend/js/common_scripts.min.js"></script>
-<script src="/assets/frontend/js/slider.js"></script>
-<script src="/assets/frontend/js/common_func.js"></script>
-<script src="/assets/frontend/assets/validate.js"></script>
-<script src="/assets/frontend/js/sticky_sidebar.min.js"></script>
-<script src="/assets/frontend/js/specific_detail.js"></script>
-<script src="/assets/frontend/js/datepicker.min.js"></script>
-<script src="/assets/frontend/js/datepicker_func_1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="/assets/frontend/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/frontend/js/jquery.cycle2.min.js"></script>
+<script src="/assets/frontend/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/assets/frontend/js/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="/assets/frontend/js/helper-plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/assets/frontend/js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="/assets/frontend/plugins/icheck-1.x/icheck.min.js"></script>
+<script src="/assets/frontend/js/grids.js"></script>
+<script src="/assets/frontend/js/owl.carousel.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script src="/assets/frontend/js/bootstrap.touchspin.js"></script>
+<script src="/assets/frontend/js/home.js"></script>
+<script src="/assets/frontend/js/script.js"></script>

@@ -41,8 +41,8 @@ class GeneralController extends Controller {
     $setting = Setting::first();
     $banner = Banner::where('active', 1)->get();
     $product = Product::where('active', 1)->get();
-    $slider = Slider::where('active', 1)->get();
-    return view($this->path . 'index', compact('setting', 'banner', 'product', 'slider'));
+    $slider = Slider::where('active', 1)->take('3')->get();
+    return view($this->path . 'default', compact('setting', 'banner', 'product', 'slider'));
   }
 
 }
