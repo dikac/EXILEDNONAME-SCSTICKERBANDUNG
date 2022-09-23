@@ -31,7 +31,7 @@
         </div>
         <div class="action-control">
 
-          <a href="https://api.whatsapp.com/send?phone=%20628112448111&text=Pesan ini tersambung otomatis dari produk di website, Saya Ingin Menanyakan/Membeli Item ini: %0A({{ $product->name }} - {{ $product->description }})%0ATerima%20Kasih%20--" target="_blank" class="btn btn-warning">
+          <a href="https://api.whatsapp.com/send?phone=%20{{ $setting->phone }}&text=Pesan ini tersambung otomatis dari produk di website, Saya Ingin Menanyakan/Membeli Item ini: %0A({{ $product->name }} - {{ $product->description }})%0ATerima%20Kasih%20--" target="_blank" class="btn btn-warning">
             <span class="add2cart">
               <i class="glyphicon glyphicon-shopping-cart"></i> READY </span>
           </a>
