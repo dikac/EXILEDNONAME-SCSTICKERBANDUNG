@@ -6,7 +6,7 @@
           <h3> Support </h3>
           <ul>
             <li class="supportLi">
-              <p> Jl. Ranca Bali No.4B, Pasirkaliki, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40514 </p>
+              <p> {{ $setting->address }} </p>
             </li>
             </ul>
           </div>
@@ -32,7 +32,7 @@
 
         <div class="footer-bottom">
           <div class="container">
-            <p class="pull-left"> &copy;2022 SCSTICKER BANDUNG </p>
+            <p class="pull-left"> 2022&copy; {{ $setting->name }} </p>
 
 
           </div>
