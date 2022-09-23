@@ -118,7 +118,7 @@ class SliderController extends Controller {
   public function update(UpdateRequest $request, $id) {
     if (!empty($request->file('photo'))) {
       $photo = time().'_'. $request->file('photo')->getClientOriginalName();
-      $destination = base_path() . '/public/files/photo/product';
+      $destination = base_path() . '/public/files/photo/slider';
       $request->file('photo')->move($destination, $photo);
     }
 
@@ -128,7 +128,7 @@ class SliderController extends Controller {
     if (!empty($request->file('photo'))) {
       $update['photo'] = $photo;
     }
-    
+
     $data->update($update);
     return redirect($this->url)->with('success', trans('default.notification.success.item-updated'));
   }
