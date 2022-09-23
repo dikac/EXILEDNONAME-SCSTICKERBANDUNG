@@ -16,8 +16,7 @@
         </a>
         <div class="image">
           <div class="quickview">
-            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
-            data-target="#productSetailsModalAjax">Quick View </a>
+            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="#" data-target="#productSetailsModalAjax">Quick View </a>
           </div>
           <a href="product-details.html"><img src="/files/photo/product/{{ $product->photo }}" alt="img"></a>
           <div class="promotion"><span class="new-product">  ⭐ POPULAR </span></div>
