@@ -18,7 +18,7 @@
               </div>
             </div>
           </div>
-          <img alt="img" src="/files/photo/slider/{{ $slider->photo }}" class="img-responsive parallaximg sliderImg">
+          <img alt="img" src="/files/photo/slider/{{ $slider->photo }}" class="img-responsive parallaximg sliderImg" width="100%">
         </div>
         @endforeach
 
