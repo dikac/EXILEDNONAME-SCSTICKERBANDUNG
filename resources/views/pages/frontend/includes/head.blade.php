@@ -13,8 +13,6 @@
   <script src="/assets/frontend/js/pace.min.js"></script>
   <link id="pagestyle" rel="stylesheet" type="text/css" href="/assets/frontend/css/skin-1.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
-<!-- add your custom CSS -->
 <style>
 body {
  font-family: sans-serif;
@@ -25,8 +23,8 @@ body {
  position: fixed;
  width: 60px;
  height: 60px;
- bottom: 40px;
- right: 40px;
+ bottom: 10px;
+ right: 10px;
  background-color: #25d366;
  color: #fff;
  border-radius: 50px;
