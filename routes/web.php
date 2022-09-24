@@ -1,7 +1,8 @@
 <?php
 
-Route::get('/', function () { return view('pages.frontend.themes.default'); });
 Route::get('/', 'Frontend\GeneralController@index')->name('index');
+Route::get('/gallery', 'Frontend\GeneralController@gallery')->name('gallery');
+
 Route::get('/help', function () { return view('pages.frontend.main.help'); });
 
 Auth::routes();

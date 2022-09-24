@@ -14,7 +14,7 @@
       <ul class="menu-nav">
 
         <li class="menu-item {{ (request()->is('dashboard')) ? 'menu-item-active' : '' }}"><a href="/dashboard" class="menu-link"><i class="menu-icon fas fa-desktop"></i><span class="menu-text"> Dashboard </span></a></li>
-        <li class="menu-item {{ (request()->is('dashboard/messages')) ? 'menu-item-active' : '' }}"><a href="/dashboard/messages" class="menu-link"><i class="menu-icon fas fa-inbox"></i><span class="menu-text"> Messages </span></a></li>
+        <!-- <li class="menu-item {{ (request()->is('dashboard/messages')) ? 'menu-item-active' : '' }}"><a href="/dashboard/messages" class="menu-link"><i class="menu-icon fas fa-inbox"></i><span class="menu-text"> Messages </span></a></li> -->
 
         @include('pages.backend.includes.sidebar-item')
 

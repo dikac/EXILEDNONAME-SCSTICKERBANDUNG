@@ -10,6 +10,8 @@
             <div class="container">
               <div class="col-lg-5 col-md-5 col-sm-5 pull-left sliderText dark alpha80 hidden-xs">
                 <div class="inner">
+                  @if ($slider->name == 'SC STICKER BANDUNG') <img src="/assets/frontend/logo.png" width="100%"></img><hr> @endif
+                  @if ($slider->name == 'PERTASHOP') <img src="/assets/frontend/logo-pertashop.png" width="25%"></img><hr> @endif
                   <h1> {{ $slider->name }} </h1>
                   <p class="hidden-xs">
                     {{ $slider->description }}
