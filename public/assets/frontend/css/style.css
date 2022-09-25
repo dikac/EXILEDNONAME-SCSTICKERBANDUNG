@@ -548,12 +548,35 @@ legend {
 
 .brandWrap {
 }
-
+.navbar-brand-image {
+    height: 75px;
+    width: auto;
+}
 .navbar-brand {
     padding: 10px;
     color: #FFFFFF;
     font-size: 28px;
     font-weight: bold;
+    height: 100px;
+}
+
+.navbar {
+    height: 120px;
+}
+
+.navbar > .container {
+    height: 100px !important;
+}
+.nav .navbar-nav {
+    margin-top: 50px !important;
+}
+.navbar .navbar-fixed-top {
+
+}
+
+.navbar .navbar-collapse {
+    height: 100px !important;
+    padding-top: 20px;
 }
 
 .navbar .navbar-top {

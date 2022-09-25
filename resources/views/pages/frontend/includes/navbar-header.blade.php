@@ -4,7 +4,7 @@
       <span class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span
       class="icon-bar"> </span> <span class="icon-bar"> </span>
     </button>
-    <a class="navbar-brand" href="/"><img src="/assets/frontend/logo.png" alt="TSHOP" width="100%" height="100%"></a>
+    <a class="navbar-brand" href="/"><img class="navbar-brand-image" src="/assets/frontend/logo.png" alt="TSHOP"></a>
     <div class="search-box pull-right hidden-lg hidden-md hidden-sm">
       <div class="input-group">
         <button class="btn btn-nobg getFullSearch" type="button"><i class="fa fa-search"> </i></button>
