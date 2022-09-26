@@ -5101,7 +5101,7 @@ div.quickview {
 
     /***  banner slider responsive  ***/
     .banner {
-        margin-top: 70px;
+        margin-top: 100px;
     }
 
     .sliderTextFull .inner.dark {
@@ -5522,7 +5522,7 @@ div.quickview {
         width: 100% !important;
         max-width: 320px !important;
         overflow: hidden !important;
-        margin-top: 100px;
+        margin-top: 120px;
     }
 }
 
