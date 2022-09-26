@@ -4770,7 +4770,7 @@ div.quickview {
     }
 
     .banner {
-        margin-top: 70px !important;
+        margin-top: 70px;
     }
 
     .header-version-2 .banner {
@@ -5100,7 +5100,7 @@ div.quickview {
 
     /***  banner slider responsive  ***/
     .banner {
-        margin-top: 70px !important;
+        margin-top: 70px;
     }
 
     .sliderTextFull .inner.dark {
@@ -5521,6 +5521,7 @@ div.quickview {
         width: 100% !important;
         max-width: 320px !important;
         overflow: hidden !important;
+        margin-top: 100px;
     }
 }
 
