@@ -1669,6 +1669,7 @@ h1.bolder-style.dark, h1.bolder-style.dark a {
     display: block;
     max-height: 540px;
     height: auto;
+    min-height: 200px;
     overflow: hidden;
     position: relative;
 }
